@@ -4,7 +4,7 @@
   "info": {
     "singularName": "post",
     "pluralName": "posts",
-    "displayName": "POST",
+    "displayName": "News & Insights",
     "description": ""
   },
   "options": {
@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Post_Main_Image": {
+    "Cover_Image": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -24,14 +24,20 @@
       "type": "string",
       "required": true
     },
-    "Published_Date": {
-      "type": "date",
-      "default": "2023-05-29",
-      "required": true
-    },
     "Body": {
       "type": "richtext",
       "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "news_and_insights"
     }
   }
 }
