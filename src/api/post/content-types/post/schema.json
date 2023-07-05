@@ -38,6 +38,12 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "news_and_insights"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "news_and_insight"
     }
   }
 }
