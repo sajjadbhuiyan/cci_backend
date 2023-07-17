@@ -6,8 +6,8 @@ module.exports = ({ env }) => ({
         apiKey: "re_Lb4UHrA5_5CYxUo9AfgytFUUQvDYEV76L", // Required
       },
       settings: {
-        defaultFrom: "cci.org.bd@gmail.com",
-        defaultReplyTo: "cci.org.bd@gmail.com",
+        defaultFrom: "cci.org.bd@climateintelligence.center",
+        defaultReplyTo: "cci.org.bd@climateintelligence.center",
       },
     },
   },
