@@ -1,4 +1,16 @@
 module.exports = ({ env }) => ({
+  email: {
+    config: {
+      provider: "strapi-provider-email-resend",
+      providerOptions: {
+        apiKey: "re_Lb4UHrA5_5CYxUo9AfgytFUUQvDYEV76L", // Required
+      },
+      settings: {
+        defaultFrom: "cci.org.bd@gmail.com",
+        defaultReplyTo: "cci.org.bd@gmail.com",
+      },
+    },
+  },
   // ...
   upload: {
     config: {
